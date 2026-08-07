@@ -78,3 +78,8 @@ O projeto abrirá em `http://localhost:5173`. As páginas podem ser acessadas em
 - Implementação da estrutura semântica da página inicial (header, nav, main, section, footer).
 - Criação do primeiro ponto turístico como modelo (Praia de Redonda), com imagem responsiva, descrição em `<details>` e mapa via `<iframe>`.
 - Replicação do padrão para os demais 9 pontos turísticos.
+
+### Dia 4 — 07/08/2026
+- implementação Tracker (legenda)
+- Edição em alguns detalhes do CSS
+- publicação github pages
