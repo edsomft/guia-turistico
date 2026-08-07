@@ -2,33 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/style.css">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Guia turístico com os principais pontos do Vale do Jaguaribe, Ceará.">
     <title>guia-turistico</title>
   </head>
   <body>
   <header>
     <h1>Guia Turístico — Vale do Jaguaribe</h1>
     <nav>
-      <a href="/index.html">Início</a>
-      <a href="/about.html">Sobre</a>
-      <a href="/contact.html">Contato</a>
+      <a href="/index.html" accesskey="1">Início</a>
+      <a href="/about.html" accesskey="2">Sobre</a>
+      <a href="/contact.html" accesskey="3">Contato</a>
     </nav>
   </header>
 
   <main>
+
+    <section id="video-canoa">
+      <h2>Conheça a região</h2>
+      <video controls width="600" poster="src/assets/fotos/praia_canoa.jpg">
+        <source src="src/assets/video/video_canoa.mp4" type="video/mp4">
+        <track kind="subtitles" src="src/assets/video/legenda.vtt" srclang="pt" label="Português">
+        Seu navegador não suporta vídeo.
+      </video>
+    </section>
+
+    <aside>
+      <h2>Você sabia?</h2>
+      <p>O Rio Jaguaribe é considerado o maior rio intermitente do mundo.</p>
+    </aside>
+
     <section id="pontos-turisticos">
       <h2>Pontos Turísticos</h2>
-      
-      <!--cada article representa um ponto turístico-->
+
       <article class="ponto-turistico">
         <h3>Praia de Redonda</h3>
 
         <picture>
-          <source media="(min-width: 768px)" srcset="src/assets/praia_redonda.jpg">
-          <source media="(max-width: 767px)" srcset="src/assets/praia_redonda.jpg">
-          <img src="src/assets/praia_redonda.jpg" alt="Praia de Redonda, Icapuí" width="400" height="300" loading="lazy">
+          <source media="(min-width: 768px)" srcset="src/assets/fotos/praia_redonda.jpg">
+          <source media="(max-width: 767px)" srcset="src/assets/fotos/praia_redonda.jpg">
+          <img src="src/assets/fotos/praia_redonda.jpg" alt="Praia de Redonda, Icapuí" width="400" height="300" loading="lazy">
         </picture>
+
+        <a href="src/assets/fotos/praia_redonda.jpg" download>Baixar foto</a>
 
         <details>
           <summary>Ver descrição</summary>
@@ -51,267 +69,291 @@
       </article>
 
       <article class="ponto-turistico">
-        <h3>Praia de Redonda</h3>
+        <h3>Canoa Quebrada</h3>
 
         <picture>
-          <source media="(min-width: 768px)" srcset="src/assets/praia_redonda.jpg">
-          <source media="(max-width: 767px)" srcset="src/assets/praia_redonda.jpg">
-          <img src="src/assets/praia_redonda.jpg" alt="Praia de Redonda, Icapuí" width="400" height="300" loading="lazy">
+          <source media="(min-width: 768px)" srcset="src/assets/fotos/praia_canoa.jpg">
+          <source media="(max-width: 767px)" srcset="src/assets/fotos/praia_canoa.jpg">
+          <img src="src/assets/fotos/praia_canoa.jpg" alt="Praia de Canoa Quebrada, Aracati" width="400" height="300" loading="lazy">
         </picture>
+
+        <a href="src/assets/fotos/praia_canoa.jpg" download>Baixar foto</a>
 
         <details>
           <summary>Ver descrição</summary>
-          <p>Uma das praias mais preservadas do litoral cearense, conhecida por suas dunas e lagoas...</p>
+          <p>Famosa por suas <strong>falésias avermelhadas</strong> e pelo icônico símbolo de <em>lua e estrela</em>. O local <del>era uma pacata vila</del> <ins>tornou-se um destino internacional</ins> na década de 1970. Não deixe de conhecer a movimentada rua <mark>Broadway</mark> ao anoitecer. <small>(Acessível via buggy ou caminhada)</small>.</p>
         </details>
 
         <details>
           <summary>Como chegar</summary>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.81281843748!2d-37.48880475999985!3d-4.646930437946692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9ce2fd6c9064b%3A0xfd90c6c52f3ee2be!2sPraia%20Redonda!5e0!3m2!1spt-BR!2sbr!4v1786029699823!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15908.736935242277!2d-37.52831215!3d-4.52188445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9c1cb3cdcf9db%3A0x6b840e698ef6e611!2sCanoa%20Quebrada%2C%20Aracati%20-%20CE!5e0!3m2!1spt-BR!2sbr!4v1786029700000!5m2!1spt-BR!2sbr"
             width="100%"
             height="300"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"
-            aria-label="Mapa mostrando a localização da Praia de Redonda">
+            aria-label="Mapa mostrando a localização de Canoa Quebrada">
           </iframe>
         </details>
       </article>
 
       <article class="ponto-turistico">
-        <h3>Praia de Redonda</h3>
+        <h3>Açude Castanhão</h3>
 
         <picture>
-          <source media="(min-width: 768px)" srcset="src/assets/praia_redonda.jpg">
-          <source media="(max-width: 767px)" srcset="src/assets/praia_redonda.jpg">
-          <img src="src/assets/praia_redonda.jpg" alt="Praia de Redonda, Icapuí" width="400" height="300" loading="lazy">
+          <source media="(min-width: 768px)" srcset="src/assets/fotos/acude_catanhao.jpg">
+          <source media="(max-width: 767px)" srcset="src/assets/fotos/acude_catanhao.jpg">
+          <img src="src/assets/fotos/acude_catanhao.jpg" alt="Açude Castanhão, Alto Santo e Jaguaribara" width="400" height="300" loading="lazy">
         </picture>
+
+        <a href="src/assets/fotos/praia_canoa.jpg" download>Baixar foto</a>
 
         <details>
           <summary>Ver descrição</summary>
-          <p>Uma das praias mais preservadas do litoral cearense, conhecida por suas dunas e lagoas...</p>
+          <p>O <strong>maior reservatório</strong> de água doce do Ceará, acumulando bilhões de m<sup>3</sup> de H<sub>2</sub>O. Foi construído para <del>substituir</del> <ins>redefinir</ins> a antiga cidade de Jaguaribara. É um ponto excelente para <mark>pesca esportiva</mark> e passeios de barco. <small>(Ideal visitar em períodos de cheia)</small>.</p>
         </details>
 
         <details>
           <summary>Como chegar</summary>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.81281843748!2d-37.48880475999985!3d-4.646930437946692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9ce2fd6c9064b%3A0xfd90c6c52f3ee2be!2sPraia%20Redonda!5e0!3m2!1spt-BR!2sbr!4v1786029699823!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254245.9287310884!2d-38.618684!3d-5.500587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7945d8b7bdf01a7%3A0x86835a22cf5c0c6e!2zAw33dGUgQ2FzdGFuaMOjbw!5e0!3m2!1spt-BR!2sbr!4v1786029700001!5m2!1spt-BR!2sbr"
             width="100%"
             height="300"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"
-            aria-label="Mapa mostrando a localização da Praia de Redonda">
+            aria-label="Mapa mostrando a localização do Açude Castanhão">
           </iframe>
         </details>
       </article>
 
       <article class="ponto-turistico">
-        <h3>Praia de Redonda</h3>
+        <h3>Praia de Ponta Grossa</h3>
 
         <picture>
-          <source media="(min-width: 768px)" srcset="src/assets/praia_redonda.jpg">
-          <source media="(max-width: 767px)" srcset="src/assets/praia_redonda.jpg">
-          <img src="src/assets/praia_redonda.jpg" alt="Praia de Redonda, Icapuí" width="400" height="300" loading="lazy">
+          <source media="(min-width: 768px)" srcset="src/assets/fotos/praia_ponta_grossa.jpg">
+          <source media="(max-width: 767px)" srcset="src/assets/fotos/praia_ponta_grossa.jpg">
+          <img src="src/assets/praia_ponta_grossa.jpg" alt="Praia de Ponta Grossa, Icapuí" width="400" height="300" loading="lazy">     
         </picture>
+
+        <a href="src/assets/fotos/praia_ponta_grossa.jpg" download>Baixar foto</a>
 
         <details>
           <summary>Ver descrição</summary>
-          <p>Uma das praias mais preservadas do litoral cearense, conhecida por suas dunas e lagoas...</p>
+          <p>Um verdadeiro refúgio <em>paradisíaco</em> cercado por <strong>dunas avermelhadas</strong> e piscinas naturais formadas na maré baixa. Antigamente considerada um <del>ponto isolado</del>, hoje é um <ins>ponto imperdível</ins> da <mark>Rota das Falésias</mark>. <small>(Verifique a tábua de marés antes de ir)</small>.</p>
         </details>
 
         <details>
           <summary>Como chegar</summary>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.81281843748!2d-37.48880475999985!3d-4.646930437946692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9ce2fd6c9064b%3A0xfd90c6c52f3ee2be!2sPraia%20Redonda!5e0!3m2!1spt-BR!2sbr!4v1786029699823!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.5123456789!2d-37.502111!3d-4.629111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9cf4b12345678%3A0x123456789abcdef!2sPraia%20de%20Ponta%20Grossa!5e0!3m2!1spt-BR!2sbr!4v1786029700002!5m2!1spt-BR!2sbr"
             width="100%"
             height="300"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"
-            aria-label="Mapa mostrando a localização da Praia de Redonda">
+            aria-label="Mapa mostrando a localização da Praia de Ponta Grossa">
           </iframe>
         </details>
       </article>
 
       <article class="ponto-turistico">
-        <h3>Praia de Redonda</h3>
+        <h3>Praia das Fontainha</h3>
 
         <picture>
-          <source media="(min-width: 768px)" srcset="src/assets/praia_redonda.jpg">
-          <source media="(max-width: 767px)" srcset="src/assets/praia_redonda.jpg">
-          <img src="src/assets/praia_redonda.jpg" alt="Praia de Redonda, Icapuí" width="400" height="300" loading="lazy">
+          <source media="(min-width: 768px)" srcset="src/assets/fotos/praia_fontainha.jpg">
+          <source media="(max-width: 767px)" srcset="src/assets/fotos/praia_fontainha.jpg">
+          <img src="src/assets/praia_fontainha.jpg" alt="Praia das Fontainhas, Aracati" width="400" height="300" loading="lazy">
         </picture>
+
+        <a href="src/assets/fotos/praia_fontainha.jpg" download>Baixar foto</a>
 
         <details>
           <summary>Ver descrição</summary>
-          <p>Uma das praias mais preservadas do litoral cearense, conhecida por suas dunas e lagoas...</p>
+          <p>Conhecida por suas impressionantes <strong>falésias coloridas</strong> e pelas fontes de H<sub>2</sub>O doce que brotam à beira-mar. O local era considerado um <del>ponto de difícil acesso</del>, mas se tornou uma <ins>parada obrigatória</ins> para passeios de buggy pela <mark>Rota das Falésias</mark>. Destaque para o visual das dunas que alcançam dezenas de metros de altura (10<sup>2</sup> m) e a paisagem <em>extremamente fotogênica</em>. <small>(Aproveite para se refrescar nas bicas naturais de água doce)</small>.</p>
         </details>
 
         <details>
           <summary>Como chegar</summary>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.81281843748!2d-37.48880475999985!3d-4.646930437946692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9ce2fd6c9064b%3A0xfd90c6c52f3ee2be!2sPraia%20Redonda!5e0!3m2!1spt-BR!2sbr!4v1786029699823!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15908.234567890!2d-37.458901!3d-4.545678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9c24681097531%3A0x864209753186420!2sPraia%20das%20Fontainhas!5e0!3m2!1spt-BR!2sbr!4v1786029700009!5m2!1spt-BR!2sbr"
             width="100%"
             height="300"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"
-            aria-label="Mapa mostrando a localização da Praia de Redonda">
+            aria-label="Mapa mostrando a localização da Praia das Fontainhas">
           </iframe>
         </details>
       </article>
 
       <article class="ponto-turistico">
-        <h3>Praia de Redonda</h3>
+        <h3>Centro Histórico de Aracati</h3>
 
         <picture>
-          <source media="(min-width: 768px)" srcset="src/assets/praia_redonda.jpg">
-          <source media="(max-width: 767px)" srcset="src/assets/praia_redonda.jpg">
-          <img src="src/assets/praia_redonda.jpg" alt="Praia de Redonda, Icapuí" width="400" height="300" loading="lazy">
+          <source media="(min-width: 768px)" srcset="src/assets/fotos/centro_historico_aracati.jpg">
+          <source media="(max-width: 767px)" srcset="src/assets/fotos/centro_historico_aracati.jpg">
+          <img src="src/assets/fotos/centro_historico_aracati.jpg" alt="Centro Histórico de Aracati" width="400" height="300" loading="lazy">
         </picture>
+
+        <a href="src/assets/fotos/centro_historico_aracati.jpg" download>Baixar foto</a>
 
         <details>
           <summary>Ver descrição</summary>
-          <p>Uma das praias mais preservadas do litoral cearense, conhecida por suas dunas e lagoas...</p>
+          <p>Patrimônio tombado pelo IPHAN, preservando casarões dos séculos XVIII e XIX <sup>(séc. 18-19)</sup>. As fachadas revestidas de <em>azulejos portugueses</em> foram <del>negligenciadas</del> no passado, mas receberam <ins>obras de restauração</ins>. Destaque para a <mark>Rua Grande</mark>. <small>(Entrada gratuita nos monumentos públicos)</small>.</p>
         </details>
 
         <details>
           <summary>Como chegar</summary>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.81281843748!2d-37.48880475999985!3d-4.646930437946692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9ce2fd6c9064b%3A0xfd90c6c52f3ee2be!2sPraia%20Redonda!5e0!3m2!1spt-BR!2sbr!4v1786029699823!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15909.123456789!2d-37.771234!3d-4.561234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9c6123456789%3A0x987654321fedcba!2sCentro%20Historico%20de%20Aracati!5e0!3m2!1spt-BR!2sbr!4v1786029700004!5m2!1spt-BR!2sbr"
             width="100%"
             height="300"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"
-            aria-label="Mapa mostrando a localização da Praia de Redonda">
+            aria-label="Mapa mostrando a localização do Centro Histórico de Aracati">
           </iframe>
         </details>
       </article>
 
       <article class="ponto-turistico">
-        <h3>Praia de Redonda</h3>
+        <h3>Praia de Majorlândia</h3>
 
         <picture>
-          <source media="(min-width: 768px)" srcset="src/assets/praia_redonda.jpg">
-          <source media="(max-width: 767px)" srcset="src/assets/praia_redonda.jpg">
-          <img src="src/assets/praia_redonda.jpg" alt="Praia de Redonda, Icapuí" width="400" height="300" loading="lazy">
+          <source media="(min-width: 768px)" srcset="src/assets/fotos/praia_majorlandia.jpg">
+          <source media="(max-width: 767px)" srcset="src/assets/fotos/praia_majorlandia.jpg">
+          <img src="src/assets/fotos/praia_majorlandia.jpg" alt="Praia de Majorlândia, Aracati" width="400" height="300" loading="lazy">
         </picture>
+
+        <a href="src/assets/fotos/praia_majorlandia.jpg" download>Baixar foto</a>
 
         <details>
           <summary>Ver descrição</summary>
-          <p>Uma das praias mais preservadas do litoral cearense, conhecida por suas dunas e lagoas...</p>
+          <p>Berço do famoso artesanato em <strong>garrafas de areia colorida</strong>. O que era um <del>ofício artesanal simples</del> se tornou uma <ins>referência cultural nacional</ins>. Destaque para a <mark>escultura do mestre Toinho</mark> entalhada nas falésias. <small>(Excelente infraestrutura de barracas de praia)</small>.</p>
         </details>
 
         <details>
           <summary>Como chegar</summary>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.81281843748!2d-37.48880475999985!3d-4.646930437946692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9ce2fd6c9064b%3A0xfd90c6c52f3ee2be!2sPraia%20Redonda!5e0!3m2!1spt-BR!2sbr!4v1786029699823!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15908.432109876!2d-37.498765!3d-4.538765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9c1d987654321%3A0x1122334455667788!2sPraia%20de%20Majorl%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1786029700005!5m2!1spt-BR!2sbr"
             width="100%"
             height="300"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"
-            aria-label="Mapa mostrando a localização da Praia de Redonda">
+            aria-label="Mapa mostrando a localização da Praia de Majorlândia">
           </iframe>
         </details>
       </article>
 
       <article class="ponto-turistico">
-        <h3>Praia de Redonda</h3>
+        <h3>Rio Jaguaribe</h3>
 
         <picture>
-          <source media="(min-width: 768px)" srcset="src/assets/praia_redonda.jpg">
-          <source media="(max-width: 767px)" srcset="src/assets/praia_redonda.jpg">
-          <img src="src/assets/praia_redonda.jpg" alt="Praia de Redonda, Icapuí" width="400" height="300" loading="lazy">
+          <source media="(min-width: 768px)" srcset="src/assets/fotos/rio_jaguaribe.jpg">
+          <source media="(max-width: 767px)" srcset="src/assets/fotos/rio_jaguaribe.jpg">
+          <img src="src/assets/fotos/rio_jaguaribe.jpg" alt="Encontro do Rio Jaguaribe com o mar em Fortim" width="400" height="300" loading="lazy">
         </picture>
+
+        <a href="src/assets/fotos/rio_jaguaribe.jpg" download>Baixar foto</a>
 
         <details>
           <summary>Ver descrição</summary>
-          <p>Uma das praias mais preservadas do litoral cearense, conhecida por suas dunas e lagoas...</p>
+          <p>O ponto onde o maior rio temporário do mundo encontra o oceano (mistura de H<sub>2</sub>O doce e salgada). O local que <del>servia apenas para pesca</del> agora é um <ins>ponto turístico vibrante</ins> para a prática de <mark>kitesurf</mark> e passeios de barco. <small>(Condições de vento excelentes de julho a dezembro)</small>.</p>
         </details>
 
         <details>
           <summary>Como chegar</summary>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.81281843748!2d-37.48880475999985!3d-4.646930437946692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9ce2fd6c9064b%3A0xfd90c6c52f3ee2be!2sPraia%20Redonda!5e0!3m2!1spt-BR!2sbr!4v1786029699823!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15910.1112131415!2d-37.798765!3d-4.441234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9c9876543210f%3A0xaabbccddeeff0011!2sBarra%20do%20Rio%20Jaguaribe!5e0!3m2!1spt-BR!2sbr!4v1786029700006!5m2!1spt-BR!2sbr"
             width="100%"
             height="300"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"
-            aria-label="Mapa mostrando a localização da Praia de Redonda">
+            aria-label="Mapa mostrando a foz do Rio Jaguaribe em Fortim">
           </iframe>
         </details>
       </article>
 
       <article class="ponto-turistico">
-        <h3>Praia de Redonda</h3>
+        <h3>Praia de Quixaba</h3>
 
         <picture>
-          <source media="(min-width: 768px)" srcset="src/assets/praia_redonda.jpg">
-          <source media="(max-width: 767px)" srcset="src/assets/praia_redonda.jpg">
-          <img src="src/assets/praia_redonda.jpg" alt="Praia de Redonda, Icapuí" width="400" height="300" loading="lazy">
+          <source media="(min-width: 768px)" srcset="src/assets/fotos/praia_quixaba.jpg">
+          <source media="(max-width: 767px)" srcset="src/assets/fotos/praia_quixaba.jpg">
+          <img src="src/assets/fotos/praia_quixaba.jpg" alt="Praia de Quixaba, Aracati" width="400" height="300" loading="lazy">
         </picture>
+
+        <a href="src/assets/fotos/praia_quixaba.jpg" download>Baixar foto</a>
 
         <details>
           <summary>Ver descrição</summary>
-          <p>Uma das praias mais preservadas do litoral cearense, conhecida por suas dunas e lagoas...</p>
+          <p>Tranquila vila de pescadores emoldurada por <strong>gigantescas falésias</strong> de tom claro. O local era <del>desconhecido pelos turistas</del>, mas foi <ins>descoberto por amantes do sossego</ins>. Destaca-se por suas águas <mark>calmas e cristalinas</mark>. <small>(Acesso facilitado por via asfaltada)</small>.</p>
         </details>
 
         <details>
           <summary>Como chegar</summary>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.81281843748!2d-37.48880475999985!3d-4.646930437946692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9ce2fd6c9064b%3A0xfd90c6c52f3ee2be!2sPraia%20Redonda!5e0!3m2!1spt-BR!2sbr!4v1786029699823!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15907.987654321!2d-37.476543!3d-4.576543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9c24681357901%3A0x135792468013579!2sPraia%20de%20Quixaba!5e0!3m2!1spt-BR!2sbr!4v1786029700007!5m2!1spt-BR!2sbr"
             width="100%"
             height="300"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"
-            aria-label="Mapa mostrando a localização da Praia de Redonda">
+            aria-label="Mapa mostrando a localização da Praia de Quixaba">
           </iframe>
         </details>
       </article>
 
       <article class="ponto-turistico">
-        <h3>Praia de Redonda</h3>
+        <h3>Trilha do Manguezal de Icapuí</h3>
 
         <picture>
-          <source media="(min-width: 768px)" srcset="src/assets/praia_redonda.jpg">
-          <source media="(max-width: 767px)" srcset="src/assets/praia_redonda.jpg">
-          <img src="src/assets/praia_redonda.jpg" alt="Praia de Redonda, Icapuí" width="400" height="300" loading="lazy">
+          <source media="(min-width: 768px)" srcset="src/assets/fotos/trilha_manguezal_icapui.jpg">
+          <source media="(max-width: 767px)" srcset="src/assets/fotos/trilha_manguezal_icapui.jpg">
+          <img src="src/assets/fotos/trilha_manguezal_icapui.jpg" alt="Trilha Ecológica do Manguezal, Icapuí" width="400" height="300" loading="lazy">
         </picture>
+
+        <a href="src/assets/fotos/trilha_manguezal_icapui.jpg" download>Baixar foto</a>
 
         <details>
           <summary>Ver descrição</summary>
-          <p>Uma das praias mais preservadas do litoral cearense, conhecida por suas dunas e lagoas...</p>
+          <p>Passarela suspensa de madeira com extensão superior a 10<sup>2</sup> metros, permitindo a observação do ecossistema do mangue. A área sofria com <del>descarte indevido de lixo</del>, mas recebeu <ins>proteção comunitária rigorosa</ins> para preservar a <mark>biodiversidade local</mark>. <small>(Caminhada leve e acessível)</small>.</p>
         </details>
 
         <details>
           <summary>Como chegar</summary>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.81281843748!2d-37.48880475999985!3d-4.646930437946692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9ce2fd6c9064b%3A0xfd90c6c52f3ee2be!2sPraia%20Redonda!5e0!3m2!1spt-BR!2sbr!4v1786029699823!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15905.876543210!2d-37.351234!3d-4.711234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9d12345678901%3A0x098765432109876!2sIcapu%C3%AD%20-%20CE!5e0!3m2!1spt-BR!2sbr!4v1786029700008!5m2!1spt-BR!2sbr"
             width="100%"
             height="300"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"
-            aria-label="Mapa mostrando a localização da Praia de Redonda">
+            aria-label="Mapa mostrando a localização da Trilha do Manguezal de Icapuí">
           </iframe>
         </details>
       </article>
+
+      <dialog open>
+        <h3>Dica</h3>
+        <p>Leve protetor solar e água — as trilhas da região não têm sombra em boa parte do percurso.</p>
+      </dialog>
 
     </section>
+    
   </main>
 
   <footer>

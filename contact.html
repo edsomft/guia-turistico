@@ -1,11 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato ou inscreva-se para um passeio turístico no Vale do Jaguaribe.">
+  <link rel="stylesheet" href="/src/style.css">
+  <title>Contato — Guia Turístico Vale do Jaguaribe</title>
 </head>
 <body>
-    
+  <header>
+    <h1>Contato e Inscrição</h1>
+    <nav>
+      <a href="/index.html" accesskey="1">Início</a>
+      <a href="/about.html" accesskey="2">Sobre</a>
+      <a href="/contact.html" accesskey="3">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inscricao">
+      <h2>Inscreva-se para um passeio turístico</h2>
+      <p>Preencha o formulário abaixo para reservar sua vaga em um dos passeios pela região.</p>
+
+      <form>
+        <fieldset>
+          <legend>Dados pessoais</legend>
+
+          <p>
+            <label for="nome">Nome completo:</label><br>
+            <input type="text" id="nome" name="nome" required>
+          </p>
+
+          <p>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required>
+          </p>
+
+          <p>
+            <label for="telefone">Telefone (com DDD):</label><br>
+            <!-- pattern exige o formato (99) 99999-9999 -->
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              pattern="\(\d{2}\)\s\d{5}-\d{4}"
+              placeholder="(88) 99999-9999"
+              title="Formato esperado: (88) 99999-9999"
+              required>
+          </p>
+
+          <p>
+            <label for="nascimento">Data de nascimento:</label><br>
+            <input type="date" id="nascimento" name="nascimento" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Detalhes do passeio</legend>
+
+          <p>
+            <label for="pessoas">Número de pessoas:</label><br>
+            <input type="number" id="pessoas" name="pessoas" min="1" max="20" value="1">
+          </p>
+
+          <p>
+            <label for="distancia">Disposição para caminhada (em km):</label><br>
+            <input type="range" id="distancia" name="distancia" min="0" max="10" step="1" value="2">
+          </p>
+
+          <p>Escolha o destino do passeio:</p>
+          <p>
+            <input type="radio" id="destino-redonda" name="destino" value="redonda" checked>
+            <label for="destino-redonda">Praia de Redonda</label>
+          </p>
+          <p>
+            <input type="radio" id="destino-canoa" name="destino" value="canoa">
+            <label for="destino-canoa">Canoa Quebrada</label>
+          </p>
+          <p>
+            <input type="radio" id="destino-castanhao" name="destino" value="castanhao">
+            <label for="destino-castanhao">Açude Castanhão</label>
+          </p>
+
+          <p>
+            <input type="checkbox" id="termos" name="termos" required>
+            <label for="termos">Li e aceito os termos de participação</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Enviar inscrição</button>
+        </p>
+      </form>
+    </section>
+
+    <aside id="roteiro">
+      <h2>Material de apoio</h2>
+      <p>Baixe o roteiro com informações extras sobre os passeios:</p>
+      <a href="/src/assets/praia_redonda.jpg" download>Baixar imagem de referência</a>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Guia Turístico Vale do Jaguaribe</p>
+  </footer>
 </body>
 </html>

@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça os desenvolvedores por trás do Guia Turístico do Vale do Jaguaribe.">
+  <link rel="stylesheet" href="/src/style.css">
+  <title>Sobre o Site — Guia Turístico Vale do Jaguaribe</title>
 </head>
 <body>
-    
+  <header>
+    <h1>Sobre o Site</h1>
+    <nav>
+      <a href="/index.html" accesskey="1">Início</a>
+      <a href="/about.html" accesskey="2">Sobre</a>
+      <a href="/contact.html" accesskey="3">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="quem-somos">
+      <h2>Quem desenvolveu este projeto</h2>
+      <p>
+        Este site foi desenvolvido por <strong>Edsom</strong>, estudante do curso de
+        Desenvolvimento Web do <em>Instituto Federal do Ceará — Campus Aracati</em>,
+        como atividade avaliativa da disciplina.
+      </p>
+      <p>
+        O projeto foi construído com <mark>HTML semântico</mark> como foco principal,
+        utilizando <small>Vite com Vanilla JS apenas como ferramenta de build</small>,
+        sem uso de JavaScript no conteúdo das páginas.
+      </p>
+      <p>
+        Versão do projeto: <del>1.0</del> <ins>1.1</ins> —
+        commit n<sup>o</sup> 12<sub>(aprox.)</sub>.
+      </p>
+    </section>
+
+    <section id="tecnologias">
+      <h2>Tecnologias utilizadas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tecnologia</th>
+            <th>Função no projeto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML5</td>
+            <td>Estrutura e semântica das páginas</td>
+          </tr>
+          <tr>
+            <td>CSS3</td>
+            <td>Estilização básica (opcional na atividade)</td>
+          </tr>
+          <tr>
+            <td>Vite</td>
+            <td>Ferramenta de build e servidor de desenvolvimento</td>
+          </tr>
+          <tr>
+            <td>Git / GitHub</td>
+            <td>Versionamento e hospedagem (GitHub Pages)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="habilidades">
+      <h2>Recursos HTML explorados neste projeto</h2>
+      <ul>
+        <li>Estrutura semântica (header, nav, main, section, article, footer)</li>
+        <li>Imagens responsivas com picture/source</li>
+        <li>Mapas incorporados via iframe</li>
+        <li>Formulário com múltiplos tipos de input</li>
+      </ul>
+    </section>
+
+    <section id="feedback">
+      <h2>Deixe um comentário sobre o projeto</h2>
+      <p>Clique no quadro abaixo e escreva livremente (o texto não é salvo, é só uma demonstração de conteúdo editável):</p>
+      <div contenteditable="true">
+        Escreva aqui sua observação sobre o site...
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Guia Turístico Vale do Jaguaribe</p>
+  </footer>
 </body>
 </html>
